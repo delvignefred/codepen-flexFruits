@@ -280,6 +280,9 @@ body {
           solid;
         text-decoration: 0.1rem line-through var(--system-color-light) solid;
 
+        /* ☛ ⚠ cursor max size 128px*128px */
+        cursor: url("./assets/cursor.png"), context-menu;
+
         &:first-of-type {
           margin-block: 1rem 0rem;
         }
