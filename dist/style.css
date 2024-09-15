@@ -154,13 +154,13 @@ body {
 
   & section {
     inline-size: 100%;
-    height: 100%;
+    block-size: 100%;
 
     flex: 0 0 75%;
 
     & main {
-      inline-size: inherit;
-      height: inherit;
+      inline-size: 100%;
+      block-size: 100%;
 
       padding-inline: 1rem;
       padding-block: 1rem;
@@ -208,7 +208,7 @@ body {
 
   & aside {
     inline-size: 100%;
-    height: 100%;
+    block-size: 100%;
 
     flex: 0 0 25%;
 
@@ -224,8 +224,8 @@ body {
     cursor: url("./assets/cursor.png"), default;
 
     & nav {
-      inline-size: inherit;
-      block-size: inherit;
+      inline-size: 100%;
+      block-size: 100%;
 
       display: flex;
       flex-flow: column nowrap;
