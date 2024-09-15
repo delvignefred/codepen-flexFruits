@@ -370,7 +370,6 @@ body {
           opacity: 0.8;
           transition: transform 0.25s ease, filter 0.25s ease,
             opacity 0.25s ease;
-          white-space: transform, filter, opacity;
           /* ☛ ⚠ cursor max size 128px*128px */
           cursor: url("./assets/cursor.png"), pointer;
 
