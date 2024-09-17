@@ -156,7 +156,7 @@ body {
     inline-size: 100%;
     block-size: 100%;
 
-    flex: 0 0 75%;
+    flex: 1 1 75%;
 
     & main {
       inline-size: 100%;
@@ -210,7 +210,7 @@ body {
     inline-size: 100%;
     block-size: 100%;
 
-    flex: 0 0 25%;
+    flex: 1 1 25%;
 
     background-color: var(--system-color-watermelon);
     border-left: 1px solid var(--system-color-dark);
@@ -402,11 +402,11 @@ body {
 @media (max-aspect-ratio: 4 / 3) {
   body {
     & aside {
-      flex: 0 0 50%;
+      flex: 1 1 50%;
     }
 
     & section {
-      flex: 0 0 50%;
+      flex: 1 1 50%;
     }
   }
 }
