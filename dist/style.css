@@ -186,19 +186,19 @@ body {
         transform: scale(0.8);
 
         &:is(:nth-of-type(1), :nth-of-type(5), :nth-of-type(9)) {
-          background: url("./assets/fraise.webp") no-repeat 50% 0% / cover;
+          background: url("./assets/fraise.avif") no-repeat 50% 0% / cover;
         }
 
         &:is(:nth-of-type(2), :nth-of-type(6), :nth-of-type(10)) {
-          background: url("./assets/poire.webp") no-repeat 50% 0% / cover;
+          background: url("./assets/poire.avif") no-repeat 50% 0% / cover;
         }
 
         &:is(:nth-of-type(3), :nth-of-type(7), :nth-of-type(11)) {
-          background: url("./assets/orange.webp") no-repeat 50% 0% / cover;
+          background: url("./assets/orange.avif") no-repeat 50% 0% / cover;
         }
 
         &:is(:nth-of-type(4), :nth-of-type(8), :nth-of-type(12)) {
-          background: url("./assets/pomme.webp") no-repeat 50% 0% / cover;
+          background: url("./assets/pomme.avif") no-repeat 50% 0% / cover;
         }
       }
     }
