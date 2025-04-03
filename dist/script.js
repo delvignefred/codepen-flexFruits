@@ -8,9 +8,9 @@ const btnColumnReverse = document.querySelector(".nav__btn__fd-column-reverse");
 
 btnRow.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnRowReverse, btnColumn, btnColumnReverse]) {
+  [btnRowReverse, btnColumn, btnColumnReverse].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnRow.classList.add("btn--active");
 
   frame.classList.remove("fd-row-reverse", "fd-column", "fd-column-reverse");
@@ -19,9 +19,9 @@ btnRow.addEventListener("click", (event) => {
 
 btnRowReverse.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnRow, btnColumn, btnColumnReverse]) {
+  [btnRow, btnColumn, btnColumnReverse].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnRowReverse.classList.add("btn--active");
 
   frame.classList.remove("fd-row", "fd-column", "fd-column-reverse");
@@ -30,9 +30,9 @@ btnRowReverse.addEventListener("click", (event) => {
 
 btnColumn.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnRowReverse, btnRow, btnColumnReverse]) {
+  [btnRowReverse, btnRow, btnColumnReverse].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnColumn.classList.add("btn--active");
 
   frame.classList.remove("fd-row", "fd-row-reverse", "fd-column-reverse");
@@ -41,9 +41,9 @@ btnColumn.addEventListener("click", (event) => {
 
 btnColumnReverse.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnRowReverse, btnColumn, btnRow]) {
+  [btnRowReverse, btnColumn, btnRow].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnColumnReverse.classList.add("btn--active");
 
   frame.classList.remove("fd-row", "fd-row-reverse", "fd-column");
@@ -58,9 +58,9 @@ const btnColumnGap = document.querySelector(".nav__btn__gap-column");
 
 btnColumnGap.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnNoGap, btnGap, btnRowGap]) {
+  [btnNoGap, btnGap, btnRowGap].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnColumnGap.classList.add("btn--active");
 
   frame.classList.remove("gap-on", "gap-row");
@@ -69,9 +69,9 @@ btnColumnGap.addEventListener("click", (event) => {
 
 btnRowGap.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnColumnGap, btnGap, btnNoGap]) {
+  [btnColumnGap, btnGap, btnNoGap].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnRowGap.classList.add("btn--active");
 
   frame.classList.remove("gap-on", "gap-column");
@@ -80,9 +80,9 @@ btnRowGap.addEventListener("click", (event) => {
 
 btnGap.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnColumnGap, btnRowGap, btnNoGap]) {
+  [btnColumnGap, btnRowGap, btnNoGap].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnGap.classList.add("btn--active");
 
   frame.classList.remove("gap-row", "gap-column");
@@ -91,9 +91,9 @@ btnGap.addEventListener("click", (event) => {
 
 btnNoGap.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnColumnGap, btnGap, btnRowGap]) {
+  [btnColumnGap, btnGap, btnRowGap].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnNoGap.classList.add("btn--active");
 
   frame.classList.remove("gap-on", "gap-row", "gap-column"); // ✑ remove gap
@@ -108,9 +108,9 @@ const btnAcAround = document.querySelector(".nav__btn__ac-around");
 
 btnAcStart.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnAcCenter, btnAcEnd, btnAcBetween, btnAcAround]) {
+  [btnAcCenter, btnAcEnd, btnAcBetween, btnAcAround].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnAcStart.classList.add("btn--active");
 
   frame.classList.remove("ac-center", "ac-end", "ac-between", "ac-around");
@@ -119,9 +119,9 @@ btnAcStart.addEventListener("click", (event) => {
 
 btnAcCenter.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnAcStart, btnAcEnd, btnAcBetween, btnAcAround]) {
+  [btnAcStart, btnAcEnd, btnAcBetween, btnAcAround].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnAcCenter.classList.add("btn--active");
 
   frame.classList.remove("ac-start", "ac-end", "ac-between", "ac-around");
@@ -130,9 +130,9 @@ btnAcCenter.addEventListener("click", (event) => {
 
 btnAcEnd.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnAcCenter, btnAcStart, btnAcBetween, btnAcAround]) {
+  [btnAcCenter, btnAcStart, btnAcBetween, btnAcAround].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnAcEnd.classList.add("btn--active");
 
   frame.classList.remove("ac-start", "ac-center", "ac-between", "ac-around");
@@ -141,9 +141,9 @@ btnAcEnd.addEventListener("click", (event) => {
 
 btnAcBetween.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnAcCenter, btnAcEnd, btnAcStart, btnAcAround]) {
+  [btnAcCenter, btnAcEnd, btnAcStart, btnAcAround].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnAcBetween.classList.add("btn--active");
 
   frame.classList.remove("ac-start", "ac-center", "ac-end", "ac-around");
@@ -152,9 +152,9 @@ btnAcBetween.addEventListener("click", (event) => {
 
 btnAcAround.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnAcCenter, btnAcEnd, btnAcBetween, btnAcStart]) {
+  [btnAcCenter, btnAcEnd, btnAcBetween, btnAcStart].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnAcAround.classList.add("btn--active");
 
   frame.classList.remove("ac-start", "ac-center", "ac-end", "ac-between");
@@ -171,9 +171,9 @@ const btnJcEvenly = document.querySelector(".nav__btn__jc-evenly");
 
 btnJcStart.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnJcCenter, btnJcEnd, btnJcBetween, btnJcAround, btnJcEvenly]) {
+  [btnJcCenter, btnJcEnd, btnJcBetween, btnJcAround, btnJcEvenly].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnJcStart.classList.add("btn--active");
 
   frame.classList.remove("jc-center", "jc-end", "jc-between", "jc-around", "jc-evenly");
@@ -182,9 +182,9 @@ btnJcStart.addEventListener("click", (event) => {
 
 btnJcCenter.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnJcStart, btnJcEnd, btnJcBetween, btnJcAround, btnJcEvenly]) {
+  [btnJcStart, btnJcEnd, btnJcBetween, btnJcAround, btnJcEvenly].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnJcCenter.classList.add("btn--active");
 
   frame.classList.remove("jc-start", "jc-end", "jc-between", "jc-around", "jc-evenly");
@@ -193,9 +193,9 @@ btnJcCenter.addEventListener("click", (event) => {
 
 btnJcEnd.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnJcCenter, btnJcStart, btnJcBetween, btnJcAround, btnJcEvenly]) {
+  [btnJcCenter, btnJcStart, btnJcBetween, btnJcAround, btnJcEvenly].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnJcEnd.classList.add("btn--active");
 
   frame.classList.remove("jc-start", "jc-center", "jc-between", "jc-around", "jc-evenly");
@@ -204,9 +204,9 @@ btnJcEnd.addEventListener("click", (event) => {
 
 btnJcBetween.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnJcCenter, btnJcEnd, btnJcStart, btnJcAround, btnJcEvenly]) {
+  [btnJcCenter, btnJcEnd, btnJcStart, btnJcAround, btnJcEvenly].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnJcBetween.classList.add("btn--active");
 
   frame.classList.remove("jc-start", "jc-center", "jc-end", "jc-around", "jc-evenly");
@@ -215,9 +215,9 @@ btnJcBetween.addEventListener("click", (event) => {
 
 btnJcAround.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnJcCenter, btnJcEnd, btnJcBetween, btnJcStart, btnJcEvenly]) {
+  [btnJcCenter, btnJcEnd, btnJcBetween, btnJcStart, btnJcEvenly].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnJcAround.classList.add("btn--active");
 
   frame.classList.remove("jc-start", "jc-center", "jc-end", "jc-between", "jc-evenly");
@@ -226,9 +226,9 @@ btnJcAround.addEventListener("click", (event) => {
 
 btnJcEvenly.addEventListener("click", (event) => {
   event.preventDefault();
-  for (const btn of [btnJcCenter, btnJcEnd, btnJcBetween, btnJcAround, btnJcStart]) {
+  [btnJcCenter, btnJcEnd, btnJcBetween, btnJcAround, btnJcStart].forEach(btn => {
     btn.classList.remove("btn--active");
-  }
+  });
   btnJcEvenly.classList.add("btn--active");
 
   frame.classList.remove("jc-start", "jc-center", "jc-end", "jc-between", "jc-around");
